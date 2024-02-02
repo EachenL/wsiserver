@@ -8,10 +8,12 @@
 
   let view;
 
+
   const getProps = async () => {
     const response = await fetch(`${url}/props`);
     return await response.json();
   };
+
 
   const resetBounds = (zoom2size) => {
     const zoom = view.getZoom();
